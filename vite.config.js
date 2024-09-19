@@ -13,7 +13,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://api.smartvillageshub.com/api/',
+        target: 'http://api.smartvillageshub.com/api/',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '')
       }
